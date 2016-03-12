@@ -1,0 +1,144 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>GALAXY CLOCK</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Description" content="A clock that quantifies time with respect to other planets.">
+<meta name="Keywords" content="galaxy, clock, calculator, mercury, venus, mars, jupiter, saturn, uranus, neptune">
+<meta name="author" content="Garen J Torikian, miadzin">
+
+<script language="javascript" type="text/javascript" src="common/niceforms/niceforms.js"></script>
+<link rel="stylesheet" type="text/css" media="all" href="common/niceforms/niceforms-default.css" />
+<script type="text/javascript" src="common/prototype.js"></script>
+<script>
+function sendRequest() {
+	new Ajax.Request("calculate.php", 
+	{ 
+		method: 'post', 
+		postBody: 'earth_time='+$F('earth_time')+'&time_format='+$F('time_format'),
+		onComplete: showResponse 
+	});
+}
+function showResponse(req){
+	$('result').innerHTML=  req.responseText;
+}
+</script>
+<link rel="stylesheet" type="text/css" media="all" href="common/style.css" />
+</head>
+<body>
+	<div class="left">
+		<script type="text/javascript"><!--
+		google_ad_client = "pub-6880494445688269";
+		/* GalaxyClock-Long,Narrow */
+		google_ad_slot = "2969916837";
+		google_ad_width = 120;
+		google_ad_height = 240;
+		//-->
+		</script>
+		<script type="text/javascript"
+		src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+		</script>
+	</div>
+	<div class="right">
+		<script type="text/javascript"><!--
+		google_ad_client = "pub-6880494445688269";
+		/* GalaxyClock-Long,Narrow */
+		google_ad_slot = "2969916837";
+		google_ad_width = 120;
+		google_ad_height = 240;
+		//-->
+		</script>
+		<script type="text/javascript"
+		src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+		</script>
+	</div>
+<div id="wrapper">
+    <div class="row">  
+    	<div class="leftcol">
+    		<h1>What?</h1>
+    	</div>
+    	<div class="rightcol">
+    		<p>
+    			Time as a fourth dimension. Time as a relative concept. Time as an immeasurable entity.<br/>
+				Whatever definition you've heard, consider one more: time as a galactic concept.
+    		</p>
+			<p>
+				This calculator quantifies time with respect to other planets. You ought to use it.<br/>  			
+    		</p>
+    	</div>
+    </div>
+    <div class="row">  
+    	<div class="leftcol">
+    		<h1>When?</h1>
+    	</div>
+    	<div class="rightcol" style="width: 500px;">
+			<form action="calculate.php" method="post" class="niceform" id="timeform">
+			    <input type="text" id="earth_time" name="earth_time" size="10" maxlength="10" />
+			    <span class="spaced">Earth</span>
+			    <select size="1" name="time_format[]" id="time_format">
+			        <option value="hours">Hours</option>
+			        <option value="days">Days</option>
+			        <option value="months">Months</option>
+			        <option value="years">Years</option>
+			    </select> 
+			   <span class="spaced">is</span>
+			   <button type="button" name="button" id="button" onClick="sendRequest()">equal to?</button>
+			</form>
+			<div id="result"></div>
+    	</div>
+    </div>
+     <div class="row">  
+    	<div class="leftcol">
+    		<h1>Why?</h1>
+    	</div>
+    	<div class="rightcol">
+    		<p>
+    			To encourage people to say things like "This warranty lasts 1 Mercury Year," "That Galapagos Turtle<br/>
+    			is over two Neptune years old," or "See you in two Jupiter days." 
+    		</p>
+    	</div>
+    </div>
+     <div class="row">  
+    	<div class="leftcol">
+    		<h1>How?</h1>
+    	</div>
+    	<div class="rightcol">
+    		<p>The calculator make the following assumptions:<br/></p>
+    		<ol>	
+    		   		<li>24 hours in an Earth day</li>
+    		   		<li>30.4375 Earth days in an Earth month (days of the month vary; I had to take an average)</li>
+    		   		<li>365.25 days in an Earth year</li>
+    		</ol> 
+			<p>Data on planetary orbits was taken from <a href="http://www.enchantedlearning.com/subjects/astronomy/planets/" target="_blank">this site</a>. You can find a chart of my calculations <a href="ar.htm"target="_blank" alt="*Corrections welcome!" title="*Corrections welcome!">here</a>.
+			<p>Earth minutes and seconds do not show up because the precision of the calculations is difficult. Planetary<br/>months do not show up because they do not exist, <em>i.e.</em> scientists have not yet <br/>devised a time schema for other planets beyond "day" and "year."</p>
+			<p>Pluto is not listed because <em><a href="http://www.nytimes.com/2006/08/24/science/space/25pluto.html?_r=1&ei=5087&en=cfe4d03207c823f2&ex=1172030400&adxnnl=1&excamp=GGGNpluto&adxnnlx=1156820936-x7vi0zUxIJHoKC1TQ0qrMA" target="_blank">Pluto is no longer classified as a planet</a>.</em> If you object to this<br/>reality, <a href="http://www.watchingamerica.com/beijingnews000004.shtml" target="_blank">get over it</a>.    
+    	</div>
+    </div>    
+     <div class="row_last">  
+    	<div class="leftcol">
+    		<h1>Who?</h1>
+    
+    		<form action="https://www.paypal.com/cgi-bin/webscr" method="post" id="paypal">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="5972749">
+<input type="image" src="https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+    	</div>
+    	<div class="rightcol">
+    		<p>This site is by the same person who does <a href="https://www.github.com/gjtorikian">a lot of other stuff</a>.</p>
+    	</div>
+    </div>      
+  </div>
+  <script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-15737148-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>
