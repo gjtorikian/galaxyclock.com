@@ -22,125 +22,35 @@ body {
 	border-color: #ff3300;
 }
 
-.row {
-	float: left;
+hr {
+	border: 0;
 	border-bottom-width: 1px;
 	border-bottom-style: dotted;
 	border-bottom-color: #000000;
 	padding-bottom: 3px;
-	width: 800px;
 	margin-top: 5px;
 }
-.row_last {
-	float: left;
-	border-bottom-style: none;
-	padding-bottom: 3px;
-	width: 800px;
-	margin-top: 15px;
-}
-.leftcol {
-	width: 90px;
-	margin-left: 18px;
-	float: left;
-	padding-bottom: 10px;
-}
-.rightcol {
-	float: left;
-	padding-bottom: 0px;
-}
 
-#time_format {
-	position: relative;
-}
-h1 {
-	font-family: "Arial", Helvetica, sans-serif;
-	font-size: 20px;
-	font-style: normal;
-	font-weight: bold;
-	color: #000000;
-	text-align: left;
-	display: inline;
-	line-height: 16px;
-}
-p {
-	font-size: 16px;
-	color: #333333;
-	text-align: left;
-}
-a {text-decoration:none;}
-a:visited {color:blue;}
-form#timeform {
-	padding-top: 25px;
-	style: block;
-}
-form#paypal {
-	padding-top: 8px;
-}
-ol li {
-	font-size: 16px;
-	color: #333333;
-	text-align: left;
-}
-span.spaced {
-	padding: 5px 5px 0 5px;
-	font-size: 20px;
-}
-.NFSelectOptions {
-	background-color: #6e6f72 !important;
-}
-
-.NFSelect {
-	display: inline;
+#calcTable {
+	margin-top: 10px;
 }
 
 th {
-	color: #000000;
-	border-right: 1px solid #C1DAD7;
-	border-bottom: 1px solid #C1DAD7;
-	border-top: 1px solid #C1DAD7;
-	text-transform: uppercase;
-	text-align: left;
-	padding: 6px 6px 6px 12px;
-	background: #CAE8EA url(images/bg_header.jpg) no-repeat;
+	background: #CAE8EA;
+  color: #000000;
+  border-right: 1px solid #C1DAD7;
+  border-bottom: 1px solid #C1DAD7;
+  border-top: 1px solid #C1DAD7;
+  text-transform: uppercase;
 }
 
-th.spec {
-	border-left: 1px solid #C1DAD7;
-	border-top: 0;
-	background: #fff url(images/bullet1.gif) no-repeat;
-}
-
-th.specalt {
-	border-left: 1px solid #C1DAD7;
-	border-top: 0;
-	background: #f5fafa url(images/bullet2.gif) no-repeat;
-	font: bold 10px "Trebuchet MS", Verdana, Arial, Helvetica,
-	sans-serif;
-	color: #B4AA9D;
+th.skip {
+	background: #CCFFFF;
 }
 
 td {
-	border-right: 2px solid #C1DAD7;
-	border-bottom: 1px solid #C1DAD7;
-	background: #fff;
-	padding: 6px 6px 6px 12px;
-	color: #000000;
-}
-
-
-td.alt {
-	background: #F5FAFA;
-	color: #B4AA9D;
-}
-
-.left {
-	float: left;
-	position: absolute;
-	left: 0px;
-}
-
-.right {
-	float: right;
-	position: absolute;
-	right: 0px;
+  border-right: 2px solid #C1DAD7;
+  border-bottom: 1px solid #C1DAD7;
+  background: #fff;
+  color: #000000;
 }
